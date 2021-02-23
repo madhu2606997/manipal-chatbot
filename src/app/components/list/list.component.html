@@ -1,0 +1,7 @@
+
+ <div class="input-group mb-2">
+     <input type="text" class="form-control" [formControl]="search" placeholder="Search ">
+   </div>
+ <div class="row p-3 lst-height mb-5">
+     <div class="col-sm-" *ngFor="let i of subList"><p (click)="sendMsg(i.title)" class='prompt-btn'>{{i.title}}</p></div>
+ </div>
